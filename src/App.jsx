@@ -80,37 +80,47 @@ function App() {
   }
 
   return (
-    <>
+    <div className='app'>
+      <h1>Text 2 Array</h1>
+      <p>Made by <a href='https://trevortylerlee.com'>Trevor Lee</a></p>
       <div className='settings'>
-        <input type="checkbox"
-          id="single-quote"
-          name="single-quote"
-          onClick={handleSingleQuoteChange}
-        />
-        <label htmlFor="single-quote">Single quote</label>
-        <input type="checkbox"
-          id="no-space"
-          name="no-space"
-          onClick={handleNoSpaceChange}
-        />
-        <label htmlFor="no-space">No spaces</label>
-        <input type="checkbox"
-          id="line-break"
-          name="line-break"
-          onClick={handleLineBreakChange}
-          disabled={perCharacter}
-          checked={lineBreak}
-          onChange={() => { }}
-        />
-        <label htmlFor="line-break">Split by line break</label>
-        <input type="checkbox"
-          id="per-character"
-          name="per-character"
-          onClick={handleSplitPerCharacterChange}
-        />
-        <label htmlFor="per-character">Split per character</label>
+        <div className='setting'>
+          <input type="checkbox"
+            id="single-quote"
+            name="single-quote"
+            onClick={handleSingleQuoteChange}
+          />
+          <label htmlFor="single-quote">Single quote</label>
+        </div>
+        <div className='setting'>
+          <input type="checkbox"
+            id="no-space"
+            name="no-space"
+            onClick={handleNoSpaceChange}
+          />
+          <label htmlFor="no-space">No spaces</label>
+        </div>
+        <div className='setting'>
+          <input type="checkbox"
+            id="line-break"
+            name="line-break"
+            onClick={handleLineBreakChange}
+            disabled={perCharacter}
+            checked={lineBreak}
+            onChange={() => { }}
+          />
+          <label htmlFor="line-break">Split by line break</label>
+        </div>
+        <div className='setting'>
+          <input type="checkbox"
+            id="per-character"
+            name="per-character"
+            onClick={handleSplitPerCharacterChange}
+          />
+          <label htmlFor="per-character">Split per character</label>
+        </div>
       </div>
-      <div className='App'>
+      <div className='input-wrapper'>
         <div className='textarea-wrapper'>
           <form>
             <textarea
@@ -149,7 +159,7 @@ function App() {
           </form>
         </div>
       </div>
-    </>
+    </div>
   )
 }
 

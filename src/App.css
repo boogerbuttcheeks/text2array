@@ -4,7 +4,34 @@
   place-content: center;
 }
 
-.App {
+h1,
+p {
+  text-align: center;
+  margin: 0;
+}
+
+h1 {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-size: 2.25rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 783px) {
+  .app {
+    max-width: 320px;
+  }
+
+  #root {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.input-wrapper {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -13,7 +40,18 @@
 
 .settings {
   padding: 1rem;
-  outline: 2px solid green;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.setting {
+  background: #3a3a3a;
+  border-radius: 4px;
+  padding: 0.25rem;
+  width: 160px;
+  cursor: pointer;
 }
 
 .textarea-wrapper {
@@ -23,6 +61,7 @@
 .generate-wrapper {
   display: flex;
   flex-direction: row-reverse;
+  margin-bottom: 2rem;
 }
 
 textarea {
@@ -33,5 +72,15 @@ textarea {
 
 label {
   margin-left: 4px;
-  margin-right: 12px;
+  cursor: pointer;
+}
+
+input[type='checkbox'] {
+  cursor: pointer;
+}
+
+@media (prefers-color-scheme: light) {
+  .setting {
+    background: #e1e1e1;
+  }
 }
