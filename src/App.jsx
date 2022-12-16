@@ -6,6 +6,7 @@ function App() {
   const [output, setOutput] = useState('')
 
   const [singleQuote, setSingleQuote] = useState(false)
+  const [noSpace, setNoSpace] = useState(false)
 
   let quote = ''
   if (singleQuote) {
@@ -18,25 +19,37 @@ function App() {
     setSingleQuote(!singleQuote)
   }
 
+  function handleNoSpaceChange() {
+    setNoSpace(!noSpace)
+  }
+
   function handleSubmit(e) {
     e.preventDefault();
 
     if (input.length === 0) {
-      alert('Type out the values you want to generate an array from in the left box and click the button. Each value should be seperated by a space.')
+      alert('Input cannot be empty.')
       return
     }
 
     const splitString = input.split(' ')
     const modifiedString = []
 
-    for (let i = 0; i < splitString.length; i++) {
-      if (i === 0) {
+    if (noSpace) {
+      for (let i = 0; i < splitString.length; i++) {
         modifiedString.push(`${quote}${splitString[i]}${quote}`)
-      } else {
-        modifiedString.push(` ${quote}${splitString[i]}${quote}`)
       }
 
       setOutput(modifiedString)
+    } else {
+      for (let i = 0; i < splitString.length; i++) {
+        if (i === 0) {
+          modifiedString.push(`${quote}${splitString[i]}${quote}`)
+        } else {
+          modifiedString.push(` ${quote}${splitString[i]}${quote}`)
+        }
+
+        setOutput(modifiedString)
+      }
     }
   }
 
@@ -54,11 +67,11 @@ function App() {
         />
         <label htmlFor="single-quote">Single quote</label>
         <input type="checkbox"
-          id="single-quote"
-          name="single-quote"
-          onClick={handleSingleQuoteChange}
+          id="no-space"
+          name="no-space"
+          onClick={handleNoSpaceChange}
         />
-        <label htmlFor="single-quote">Single quote</label>
+        <label htmlFor="no-space">No spaces</label>
       </div>
       <div className='App'>
         <div className='textarea-wrapper'>
@@ -76,7 +89,11 @@ function App() {
         <div className='textarea-wrapper'>
           <form>
             <textarea
-              placeholder={`${quote}one${quote}, ${quote}two${quote}, ${quote}three${quote}`}
+              placeholder={
+                noSpace ?
+                  `${quote}one${quote},${quote}two${quote},${quote}three${quote}`
+                  : `${quote}one${quote}, ${quote}two${quote}, ${quote}three${quote}`
+              }
               value={output}
               readOnly
             />
