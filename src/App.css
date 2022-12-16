@@ -9,10 +9,10 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 4vw;
-  outline: 2px solid red;
 }
 
 .settings {
+  padding: 1rem;
   outline: 2px solid green;
 }
 
@@ -28,4 +28,10 @@
 textarea {
   min-width: 300px;
   min-height: 200px;
+  font: inherit;
+}
+
+label {
+  margin-left: 4px;
+  margin-right: 12px;
 }

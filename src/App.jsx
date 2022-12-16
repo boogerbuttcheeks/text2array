@@ -20,6 +20,12 @@ function App() {
 
   function handleSubmit(e) {
     e.preventDefault();
+
+    if (input.length === 0) {
+      alert('Type out the values you want to generate an array from in the left box and click the button. Each value should be seperated by a space.')
+      return
+    }
+
     const splitString = input.split(' ')
     const modifiedString = []
 
@@ -41,6 +47,12 @@ function App() {
   return (
     <>
       <div className='settings'>
+        <input type="checkbox"
+          id="single-quote"
+          name="single-quote"
+          onClick={handleSingleQuoteChange}
+        />
+        <label htmlFor="single-quote">Single quote</label>
         <input type="checkbox"
           id="single-quote"
           name="single-quote"
