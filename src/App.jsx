@@ -116,7 +116,9 @@ function App() {
             <textarea
               value={input}
               onChange={handleOnChange}
-              placeholder='one two three'
+              placeholder={lineBreak ?
+                'one two three\nfour five six' :
+                'one two three'}
             />
           </form>
           <div className='generate-wrapper'>
@@ -127,9 +129,19 @@ function App() {
           <form>
             <textarea
               placeholder={
-                noSpace ?
-                  `${quote}one${quote},${quote}two${quote},${quote}three${quote}`
-                  : `${quote}one${quote}, ${quote}two${quote}, ${quote}three${quote}`
+                noSpace
+                  ? perCharacter
+                    ? `${quote}o${quote},${quote}n${quote},${quote}e${quote},${quote}t,${quote},${quote}w${quote},${quote}o${quote},${quote}t${quote},${quote}h${quote},${quote}r${quote},${quote}e${quote},${quote}e${quote}`
+                    :
+                    lineBreak
+                      ? `${quote}one two three${quote},${quote}four five six${quote}`
+                      : `${quote}one${quote},${quote}two${quote},${quote}three${quote}`
+                  : perCharacter
+                    ? `${quote}o${quote}, ${quote}n${quote}, ${quote}e${quote}, ${quote}t, ${quote}, ${quote}w${quote}, ${quote}o${quote}, ${quote}t${quote}, ${quote}h${quote}, ${quote}r${quote}, ${quote}e${quote}, ${quote}e${quote}`
+                    :
+                    lineBreak
+                      ? `${quote}one two three${quote}, ${quote}four five six${quote}`
+                      : `${quote}one${quote}, ${quote}two${quote}, ${quote}three${quote}`
               }
               value={output}
               readOnly
