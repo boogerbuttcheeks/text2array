@@ -1,0 +1,22 @@
+#root {
+  height: 100vh;
+  display: grid;
+  place-content: center;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 4vw;
+  outline: 2px solid red;
+}
+
+.textarea-wrapper {
+  min-width: 300px;
+}
+
+.generate-wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+}
