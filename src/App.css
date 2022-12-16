@@ -12,6 +12,10 @@
   outline: 2px solid red;
 }
 
+.settings {
+  outline: 2px solid green;
+}
+
 .textarea-wrapper {
   min-width: 300px;
 }
