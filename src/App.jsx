@@ -7,6 +7,8 @@ function App() {
 
   const [singleQuote, setSingleQuote] = useState(false)
   const [noSpace, setNoSpace] = useState(false)
+  const [lineBreak, setLineBreak] = useState(false)
+  const [perCharacter, setPerCharacter] = useState(false)
 
   let quote = ''
   if (singleQuote) {
@@ -23,6 +25,17 @@ function App() {
     setNoSpace(!noSpace)
   }
 
+  function handleLineBreakChange() {
+    setLineBreak(!lineBreak)
+  }
+
+  function handleSplitPerCharacterChange() {
+    setPerCharacter(!perCharacter)
+    if (lineBreak) {
+      setLineBreak(false)
+    }
+  }
+
   function handleSubmit(e) {
     e.preventDefault();
 
@@ -31,8 +44,17 @@ function App() {
       return
     }
 
-    const splitString = input.split(' ')
-    const modifiedString = []
+    let splitString = ''
+    let modifiedString = []
+
+    if (lineBreak) {
+      splitString = input.split(/\r?\n/)
+    } else if (perCharacter) {
+      splitString = input.replace(/\s+/g, '');
+      splitString = splitString.split('')
+    } else {
+      splitString = input.split(' ')
+    }
 
     if (noSpace) {
       for (let i = 0; i < splitString.length; i++) {
@@ -72,6 +94,21 @@ function App() {
           onClick={handleNoSpaceChange}
         />
         <label htmlFor="no-space">No spaces</label>
+        <input type="checkbox"
+          id="line-break"
+          name="line-break"
+          onClick={handleLineBreakChange}
+          disabled={perCharacter}
+          checked={lineBreak}
+          onChange={() => { }}
+        />
+        <label htmlFor="line-break">Split by line break</label>
+        <input type="checkbox"
+          id="per-character"
+          name="per-character"
+          onClick={handleSplitPerCharacterChange}
+        />
+        <label htmlFor="per-character">Split per character</label>
       </div>
       <div className='App'>
         <div className='textarea-wrapper'>
