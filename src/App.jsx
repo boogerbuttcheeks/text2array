@@ -1,8 +1,5 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
 import './App.css'
-import 'semantic-ui-css/semantic.min.css'
-import { Form, TextArea, Button } from 'semantic-ui-react'
 
 function App() {
   const [input, setInput] = useState('')
@@ -59,7 +56,7 @@ function App() {
             />
           </form>
           <div className='generate-wrapper'>
-            <Button onClick={handleSubmit}>Generate</Button>
+            <button onClick={handleSubmit}>Generate</button>
           </div>
         </div>
         <div className='textarea-wrapper'>
