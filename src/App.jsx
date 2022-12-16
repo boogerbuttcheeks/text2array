@@ -7,18 +7,21 @@ function App() {
 
   const [singleQuote, setSingleQuote] = useState(false)
 
+  let quote = ''
+  if (singleQuote) {
+    quote = "'"
+  } else {
+    quote = '"'
+  }
+
+  function handleSingleQuoteChange() {
+    setSingleQuote(!singleQuote)
+  }
+
   function handleSubmit(e) {
     e.preventDefault();
     const splitString = input.split(' ')
     const modifiedString = []
-
-    let quote = ''
-
-    if (singleQuote) {
-      quote = "'"
-    } else {
-      quote = '"'
-    }
 
     for (let i = 0; i < splitString.length; i++) {
       if (i === 0) {
@@ -41,11 +44,9 @@ function App() {
         <input type="checkbox"
           id="single-quote"
           name="single-quote"
-          onClick={() => {
-            setSingleQuote(!singleQuote)
-          }}
+          onClick={handleSingleQuoteChange}
         />
-        <label for="single-quote">Single quote</label>
+        <label htmlFor="single-quote">Single quote</label>
       </div>
       <div className='App'>
         <div className='textarea-wrapper'>
@@ -53,6 +54,7 @@ function App() {
             <textarea
               value={input}
               onChange={handleOnChange}
+              placeholder='one two three'
             />
           </form>
           <div className='generate-wrapper'>
@@ -62,7 +64,7 @@ function App() {
         <div className='textarea-wrapper'>
           <form>
             <textarea
-              placeholder="placeholder for now"
+              placeholder={`${quote}one${quote}, ${quote}two${quote}, ${quote}three${quote}`}
               value={output}
               readOnly
             />
