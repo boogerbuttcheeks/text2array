@@ -188,6 +188,16 @@ function App() {
           setLineBreak(false)
         }}>1 - 10</button>
         <button onClick={() => {
+          quickFill('1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20')
+          setPerCharacter(false)
+          setLineBreak(false)
+        }}>1 - 20</button>
+        <button onClick={() => {
+          quickFill('1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50')
+          setPerCharacter(false)
+          setLineBreak(false)
+        }}>1 - 50</button>
+        <button onClick={() => {
           quickFill('1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100')
           setPerCharacter(false)
           setLineBreak(false)
@@ -217,6 +227,41 @@ function App() {
           setPerCharacter(false)
           setLineBreak(false)
         }}>Jan - Dec</button>
+        <button onClick={() => {
+          quickFill('Afghanistan\nAlbania\nAlgeria\nAndorra\nAngola\nAntigua and Barbuda\nArgentina\nArmenia\nAustralia\nAustria\nAzerbaijan\nBahamas\nBahrain\nBangladesh\nBarbados\nBelarus\nBelgium\nBelize\nBenin\nBhutan\nBolivia\nBosnia and Herzegovina\nBotswana\nBrazil\nBrunei\nBulgaria\nBurkina Faso\nBurundi\nCambodia\nCameroon\nCanada\nCape Verde\nCentral African Republic\nChad\nChile\nChina\nColombia\nComoros\nCongo Democratic Republic\nCongo Republic\nCosta Rica\nCroatia\nCuba\nCyprus\nCzech Republic\nDenmark\nDjibouti\nDominica\nDominican Republic\nEast Timor\nEcuador\nEgypt\nEl Salvador\nEquatorial Guinea\nEritrea\nEstonia\nEthiopia\nEswatini\nFiji\nFinland\nFrance\nGabon\nGambia\nGeorgia\nGermany\nGhana\nGreece\nGrenada\nGuatemala\nGuinea\nGuinea-Bissau\nGuyana\nHaiti\nHonduras\nHungary\nIceland\nIndia\nIndonesia\nIran\nIraq\nIreland\nIsrael\nItaly\nIvory Coast\nJamaica\nJapan\nJordan\nKazakhstan\nKenya\nKiribati\nKorea North\nKorea South\nKosovo\nKuwait\nKyrgyzstan\nLaos\nLatvia\nLebanon\nLesotho\nLiberia\nLibya\nLiechtenstein\nLithuania\nLuxembourg\nMacedonia\nMadagascar\nMalawi\nMalaysia\nMaldives\nMali\nMalta\nMarshall Islands\nMauritania\nMauritius\nMexico\nMicronesia\nMoldova\nMonaco\nMongolia\nMontenegro\nMorocco\nMozambique\nMyanmar\nNamibia\nNauru\nNepal\nNetherlands\nNew Zealand\nNicaragua\nNiger\nNigeria\nNorth Macedonia\nNorway\nOman\nPakistan\nPalau\nPalestine\nPanama\nPapua New Guinea\nParaguay\nPeru\nPhilippines\nPoland\nPortugal\nQatar\nRomania\nRussian Federation\nRwanda\nSt Kitts and Nevis\nSt Lucia\nSaint Vincent and the Grenadines\nSamoa\nSan Marino\nSao Tome and Principe\nSaudi Arabia\nSenegal\nSerbia\nSeychelles\nSierra Leone\nSingapore\nSlovakia\nSlovenia\nSolomon Islands\nSomalia\nSouth Africa\nSouth Sudan\nSpain\nSri Lanka\nSudan\nSuriname\nSweden\nSwitzerland\nSyria\nTaiwan\nTajikistan\nTanzania\nThailand\nTogo\nTonga\nTrinidad and Tobago\nTunisia\nTurkey\nTurkmenistan\nTuvalu\nUganda\nUkraine\nUnited Arab Emirates\nUnited Kingdom\nUnited States\nUruguay\nUzbekistan\nVanuatu\nVatican City\nVenezuela\nVietnam\nYemen\nZambia\nZimbabwe')
+          setPerCharacter(false)
+          setLineBreak(true)
+        }}>Countries</button>
+        <button onClick={() => {
+          quickFill('Alberta\nBritish Columbia\nManitoba\nNew Brunswick\nNewfoundland and Labrador\nNorthwest Territories\nNova Scotia\nNunavut\nOntario\nPrince Edward Island\nQuebec\nSaskatchewan\nYukon')
+          setPerCharacter(false)
+          setLineBreak(true)
+        }}>🇨🇦 Provinces and territories</button>
+        <button onClick={() => {
+          quickFill('Alabama\nAlabama\nArkansas\nCalifornia\nColorado\nConnecticut\nDelaware\nFlorida\nGeorgia\nHawaii\nIdaho\nIllinois\nIndiana\nIowa\nKansas\nKentucky\nLouisiana\nMaine\nMaryland\nMassachusetts\nMichigan\nMinnesota\nMississippi\nMissouri\nMontana\nNebraska\nNevada\nNew Hampshire\nNew Jersey\nNew Mexico\nNew York\nNorth Carolina\nNorth Dakota\nOhio\nOklahoma\nOregon\nPennsylvania\nRhode Island\nSouth Carolina\nSouth Dakota\nTennessee\nTexas\nUtah\nVermont\nVirginia\nWashington\nWest Virginia\nWisconsin\nWyoming')
+          setPerCharacter(false)
+          setLineBreak(true)
+        }}>🇺🇸 States and territories</button>
+        <button onClick={() => {
+          quickFill('Rat Ox Tiger Rabbit Dragon Snake Horse Goat Monkey Rooster Dog Pig')
+          setPerCharacter(false)
+          setLineBreak(false)
+        }}>Chinese zodiac</button>
+        <button onClick={() => {
+          quickFill('Aries Taurus Gemini Cancer Leo Virgo Libra Scorpio Sagittarius Capricorn Aquarius Pisces')
+          setPerCharacter(false)
+          setLineBreak(false)
+        }}>Western zodiac</button>
+        <button onClick={() => {
+          quickFill('Mercury Venus Earth Mars Jupiter Saturn Uranus Neptune')
+          setPerCharacter(false)
+          setLineBreak(false)
+        }}>🌎 Planets</button>
+        <button onClick={() => {
+          quickFill('Africa Antarctica Asia Australia Europe North America South America')
+          setPerCharacter(false)
+          setLineBreak(false)
+        }}>Continents</button>
       </div>
     </div>
   )

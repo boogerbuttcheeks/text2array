@@ -4,6 +4,10 @@
   place-content: center;
 }
 
+.app {
+  max-width: 800px;
+}
+
 h1,
 p {
   text-align: center;
@@ -22,7 +26,7 @@ p {
 
 @media (max-width: 783px) {
   .app {
-    max-width: 320px;
+    max-width: 360px;
   }
 
   #root {
@@ -39,11 +43,12 @@ p {
 }
 
 .settings {
-  padding: 1rem;
+  padding: 1rem 0rem;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
   gap: 1rem;
+  margin-bottom: 1rem;
 }
 
 .setting {
