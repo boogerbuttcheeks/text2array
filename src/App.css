@@ -79,6 +79,12 @@ input[type='checkbox'] {
   cursor: pointer;
 }
 
+.quick-fill-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
 @media (prefers-color-scheme: light) {
   .setting {
     background: #e1e1e1;
