@@ -4,6 +4,7 @@ import './App.css'
 function App() {
   const [input, setInput] = useState('')
   const [output, setOutput] = useState('')
+  const [copied, setCopied] = useState(false)
 
   const [singleQuote, setSingleQuote] = useState(false)
   const [noSpace, setNoSpace] = useState(false)
@@ -81,6 +82,18 @@ function App() {
 
   function quickFill(e) {
     setInput(e)
+  }
+
+  async function copyToClipboard() {
+    try {
+      await navigator.clipboard.writeText(output)
+      setCopied(true)
+      setTimeout(() => {
+        setCopied(false)
+      }, 2500)
+    } catch (err) {
+      console.log(err)
+    }
   }
 
   return (
@@ -162,6 +175,9 @@ function App() {
               readOnly
             />
           </form>
+          <div className='generate-wrapper'>
+            <button onClick={copyToClipboard}>{copied ? 'Copied!' : 'Copy'}</button>
+          </div>
         </div>
       </div>
       <h2>Quick fill</h2>
