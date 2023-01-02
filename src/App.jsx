@@ -272,7 +272,7 @@ function App() {
           quickFill('Africa Antarctica Asia Australia Europe North America South America')
           setPerCharacter(false)
           setLineBreak(false)
-        }}>🌎 Continents</button>π
+        }}>🌎 Continents</button>
       </div>
       <h3>Misc.</h3>
       <div className="quick-fill-wrapper">
@@ -281,6 +281,11 @@ function App() {
           setPerCharacter(false)
           setLineBreak(false)
         }}>🧪 Chemical elements</button>
+        <button onClick={() => {
+          quickFill("Admiral\nAgent S\nAgnes\nAl\nAlfonso\nAlice\nAlli\nAmelia\nAnabelle\nAnchovy\nAngus\nAnicotti\nAnkha\nAnnalisa\nAnnalise\nAntonio\nApollo\nApple\nAstrid\nAudie\nAurora\nAva\nAvery\nAxel\nBaabara\nBam\nBangle\nBarold\nBea\nBeardo\nBeau\nBecky\nBella\nBenedict\nBenjamin\nBertha\nBettina\nBianca\nBiff\nBig Top\nBill\nBilly\nBiskit\nBitty\nBlaire\nBlanche\nBluebear\nBob\nBonbon\nBones\nBoomer\nBoone\nBoots\nBoris\nBoyd\nBree\nBroccolo\nBroffina\nBruce\nBubbles\nBuck\nBud\nBunnie\nButch\nBuzz\nCally\nCamofrog\nCanberra\nCandi\nCarmen\nCaroline\nCarrie\nCashmere\nCelia\nCesar\nChadder\nCharlise\nCheri\nCherry\nChester\nChevre\nChief\nChops\nChow\nChrissy\nClaude\nClaudia\nClay\nCleo\nClyde\nCoach\nCobb\nCoco\nCole\nColton\nCookie\nCousteau\nCranston\nCroque\nCube\nCurlos\nCurly\nCurt\nCyd\nCyrano\nDaisy\nDeena\nDeirdre\nDel\nDeli\nDerwin\nDiana\nDiva\nDizzy\nDobie\nDoc\nDom\nDora\nDotty\nDrago\nDrake\nDrift\nEd\nEgbert\nElise\nEllie\nElmer\nEloise\nElvis\nErik\nEugene\nEunice\nFang\nFauna\nFelicity\nFilbert\nFlip\nFlo\nFlora\nFlurry\nFrancine\nFrank\nFreckles\nFreya\nFriga\nFrita\nFrobert\nFuchsia\nGabi\nGala\nGaston\nGayle\nGenji\nGigi\nGladys\nGloria\nGoldie\nGonzo\nGoose\nGraham\nGreta\nGrizzly\nGroucho\nGruff\nGwen\nHamlet\nHamphrey\nHans\nHarry\nHazel\nHenry\nHippeux\nHopkins\nHopper\nHornsby\nHuck\nHugh\nIggly\nIke\nJacob\nJacques\nJambette\nJay\nJeremiah\nJitters\nJoey\nJudy\nJulia\nJulian\nJune\nKabuki\nKatt\nKeaton\nKen\nKetchup\nKevin\nKid Cat\nKidd\nKiki\nKitt\nKitty\nKlaus\nKnox\nKody\nKyle\nLeonardo\nLeopold\nLily\nLimberg\nLionel\nLobo\nLolly\nLopez\nLouie\nLucha\nLucky\nLucy\nLyman\nMac\nMaddie\nMaelle\nMaggie\nMallary\nMaple\nMarcel\nMarcie\nMargie\nMarina\nMarshal\nMathilda\nMegan\nMelba\nMerengue\nMerry\nMidge\nMint\nMira\nMiranda\nMitzi\nMoe\nMolly\nMonique\nMonty\nMoose\nMott\nMuffy\nMurphy\nNan\nNana\nNaomi\nNate\nNibbles\nNorma\nOctavian\nO'Hare\nOlaf\nOlive\nOlivia\nOpal\nOzzie\nPancetti\nPango\nPaolo\nPapi\nPashmina\nPate\nPatty\nPaula\nPeaches\nPeanut\nPecan\nPeck\nPeewee\nPeggy\nPekoe\nPenelope\nPhil\nPhoebe\nPierce\nPietro\nPinky\nPiper\nPippy\nPlucky\nPompom\nPoncho\nPoppy\nPortia\nPrince\nPuck\nPuddles\nPudge\nPunchy\nPurrl\nQueenie\nQuillson\nRaddle\nRasher\nRaymond\nRenée\nReneigh\nRex\nRhonda\nRibbot\nRicky\nRizzo\nRoald\nRobin\nRocco\nRocket\nRod\nRodeo\nRodney\nRolf\nRooney\nRory\nRoscoe\nRosie\nRowan\nRuby\nRudy\nSally\nSamson\nSandy\nSavannah\nScoot\nShari\nSheldon\nShep\nSherb\nSimon\nSkye\nSly\nSnake\nSnooty\nSoleil\nSparro\nSpike\nSpork\nSprinkle\nSprocket\nStatic\nStella\nSterling\nStinky\nStitches\nStu\nSydney\nSylvana\nSylvia\nTabby\nTad\nTammi\nTammy\nTangy\nTank\nTasha\nT-Bone\nTeddy\nTex\nTia\nTiffany\nTimbra\nTipper\nTom\nTruffles\nTucker\nTutu\nTwiggy\nTybalt\nUrsala\nVelma\nVesta\nVic\nVictoria\nViolet\nVivian\nVladimir\nWade\nWalker\nWalt\nWart Jr.\nWeber\nWendy\nWhitney\nWillow\nWinnie\nWolfgang\nYuka\nZell\nZucker")
+          setPerCharacter(false)
+          setLineBreak(true)
+        }}>ACNH Villagers</button>
       </div>
     </div>
   )
