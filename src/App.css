@@ -1,11 +1,13 @@
 #root {
-  height: 100vh;
-  display: grid;
-  place-content: center;
+  /* height: 100vh; */
+  /* display: grid; */
+  /* place-content: center; */
 }
 
 .app {
   max-width: 800px;
+  margin: 0 auto;
+  margin-top: 2rem;
 }
 
 h1,
@@ -32,6 +34,7 @@ p {
   #root {
     display: flex;
     justify-content: center;
+    overflow: auto;
   }
 }
 

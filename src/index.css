@@ -15,10 +15,6 @@
   -webkit-text-size-adjust: 100%;
 }
 
-body {
-  overflow: hidden;
-}
-
 @media (max-width: 783px) {
   body {
     overflow: scroll;
