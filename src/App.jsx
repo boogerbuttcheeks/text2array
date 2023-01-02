@@ -286,6 +286,11 @@ function App() {
           setPerCharacter(false)
           setLineBreak(true)
         }}>ACNH Villagers</button>
+        <button onClick={() => {
+          quickFill('Red Orange Yellow Green Blue Indigo Violet')
+          setPerCharacter(false)
+          setLineBreak(false)
+        }}>🌈 Colours of the rainbow</button>
       </div>
     </div>
   )
