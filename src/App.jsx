@@ -181,6 +181,7 @@ function App() {
         </div>
       </div>
       <h2>Quick fill</h2>
+      <h3>Numbers</h3>
       <div className="quick-fill-wrapper">
         <button onClick={() => {
           quickFill('1 2 3 4 5 6 7 8 9 10')
@@ -202,6 +203,9 @@ function App() {
           setPerCharacter(false)
           setLineBreak(false)
         }}>1 - 100</button>
+      </div>
+      <h3>Letters</h3>
+      <div className="quick-fill-wrapper">
         <button onClick={() => {
           quickFill('ABCDEFGHIJKLMNOPQRSTUVWXYZ')
           setPerCharacter(true)
@@ -217,6 +221,9 @@ function App() {
           setPerCharacter(true)
           setLineBreak(false)
         }}>Aa - Zz</button>
+      </div>
+      <h3>Dates</h3>
+      <div className="quick-fill-wrapper">
         <button onClick={() => {
           quickFill('Monday Tuesday Wednesday Thursday Friday Saturday Sunday')
           setPerCharacter(false)
@@ -227,6 +234,19 @@ function App() {
           setPerCharacter(false)
           setLineBreak(false)
         }}>Jan - Dec</button>
+        <button onClick={() => {
+          quickFill('Rat Ox Tiger Rabbit Dragon Snake Horse Goat Monkey Rooster Dog Pig')
+          setPerCharacter(false)
+          setLineBreak(false)
+        }}>Chinese zodiac</button>
+        <button onClick={() => {
+          quickFill('Aries Taurus Gemini Cancer Leo Virgo Libra Scorpio Sagittarius Capricorn Aquarius Pisces')
+          setPerCharacter(false)
+          setLineBreak(false)
+        }}>Western zodiac</button>
+      </div>
+      <h3>Locations</h3>
+      <div className="quick-fill-wrapper">
         <button onClick={() => {
           quickFill('Afghanistan\nAlbania\nAlgeria\nAndorra\nAngola\nAntigua and Barbuda\nArgentina\nArmenia\nAustralia\nAustria\nAzerbaijan\nBahamas\nBahrain\nBangladesh\nBarbados\nBelarus\nBelgium\nBelize\nBenin\nBhutan\nBolivia\nBosnia and Herzegovina\nBotswana\nBrazil\nBrunei\nBulgaria\nBurkina Faso\nBurundi\nCambodia\nCameroon\nCanada\nCape Verde\nCentral African Republic\nChad\nChile\nChina\nColombia\nComoros\nCongo Democratic Republic\nCongo Republic\nCosta Rica\nCroatia\nCuba\nCyprus\nCzech Republic\nDenmark\nDjibouti\nDominica\nDominican Republic\nEast Timor\nEcuador\nEgypt\nEl Salvador\nEquatorial Guinea\nEritrea\nEstonia\nEthiopia\nEswatini\nFiji\nFinland\nFrance\nGabon\nGambia\nGeorgia\nGermany\nGhana\nGreece\nGrenada\nGuatemala\nGuinea\nGuinea-Bissau\nGuyana\nHaiti\nHonduras\nHungary\nIceland\nIndia\nIndonesia\nIran\nIraq\nIreland\nIsrael\nItaly\nIvory Coast\nJamaica\nJapan\nJordan\nKazakhstan\nKenya\nKiribati\nKorea North\nKorea South\nKosovo\nKuwait\nKyrgyzstan\nLaos\nLatvia\nLebanon\nLesotho\nLiberia\nLibya\nLiechtenstein\nLithuania\nLuxembourg\nMacedonia\nMadagascar\nMalawi\nMalaysia\nMaldives\nMali\nMalta\nMarshall Islands\nMauritania\nMauritius\nMexico\nMicronesia\nMoldova\nMonaco\nMongolia\nMontenegro\nMorocco\nMozambique\nMyanmar\nNamibia\nNauru\nNepal\nNetherlands\nNew Zealand\nNicaragua\nNiger\nNigeria\nNorth Macedonia\nNorway\nOman\nPakistan\nPalau\nPalestine\nPanama\nPapua New Guinea\nParaguay\nPeru\nPhilippines\nPoland\nPortugal\nQatar\nRomania\nRussian Federation\nRwanda\nSt Kitts and Nevis\nSt Lucia\nSaint Vincent and the Grenadines\nSamoa\nSan Marino\nSao Tome and Principe\nSaudi Arabia\nSenegal\nSerbia\nSeychelles\nSierra Leone\nSingapore\nSlovakia\nSlovenia\nSolomon Islands\nSomalia\nSouth Africa\nSouth Sudan\nSpain\nSri Lanka\nSudan\nSuriname\nSweden\nSwitzerland\nSyria\nTaiwan\nTajikistan\nTanzania\nThailand\nTogo\nTonga\nTrinidad and Tobago\nTunisia\nTurkey\nTurkmenistan\nTuvalu\nUganda\nUkraine\nUnited Arab Emirates\nUnited Kingdom\nUnited States\nUruguay\nUzbekistan\nVanuatu\nVatican City\nVenezuela\nVietnam\nYemen\nZambia\nZimbabwe')
           setPerCharacter(false)
@@ -243,30 +263,23 @@ function App() {
           setLineBreak(true)
         }}>🇺🇸 States and territories</button>
         <button onClick={() => {
-          quickFill('Rat Ox Tiger Rabbit Dragon Snake Horse Goat Monkey Rooster Dog Pig')
-          setPerCharacter(false)
-          setLineBreak(false)
-        }}>Chinese zodiac</button>
-        <button onClick={() => {
-          quickFill('Aries Taurus Gemini Cancer Leo Virgo Libra Scorpio Sagittarius Capricorn Aquarius Pisces')
-          setPerCharacter(false)
-          setLineBreak(false)
-        }}>Western zodiac</button>
-        <button onClick={() => {
           quickFill('Mercury Venus Earth Mars Jupiter Saturn Uranus Neptune')
           setPerCharacter(false)
           setLineBreak(false)
-        }}>🌎 Planets</button>
+        }}>🪐 Planets</button>
         <button onClick={() => {
           quickFill('Africa Antarctica Asia Australia Europe North America South America')
           setPerCharacter(false)
           setLineBreak(false)
-        }}>Continents</button>
+        }}>🌎 Continents</button>
+      </div>
+      <h3>Misc.</h3>
+      <div className="quick-fill-wrapper">
         <button onClick={() => {
           quickFill('Hydrogen Helium Lithium Beryllium Boron Carbon Nitrogen Oxygen Fluorine Neon Sodium Magnesium Aluminum Silicon Phosphorus Sulfur Chlorine Argon Potassium Calcium Scandium Titanium Vanadium Chromium Manganese Iron Cobalt Nickel Copper Zinc Gallium Germanium Arsenic Selenium Bromine Krypton Rubidium Strontium Yttrium Zirconium Niobium Molybdenum Technetium Ruthenium Rhodium Palladium Silver Cadmium Indium Tin Antimony Tellurium Iodine Xenon Cesium Barium Lanthanum Cerium Praseodymium Neodymium Promethium Samarium Europium Gadolinium Terbium Dysprosium Holmium Erbium Thulium Ytterbium Lutetium Hafnium Tantalum Tungsten Rhenium Osmium Iridium Platinum Gold Mercury Thallium Lead Bismuth Polonium Astatine Radon Francium Radium Actinium Thorium Protactinium Uranium Neptunium Plutonium Americium Curium Berkelium Californium Einsteinium Fermium Mendelevium Nobelium Lawrencium Rutherfordium Dubnium Seaborgium Bohrium Hassium Meitnerium Darmstadtium Roentgenium Copernicium Nihonium Flerovium Moscovium Livermorium Tennessine Oganesson')
           setPerCharacter(false)
           setLineBreak(false)
-        }}>Chemical elements</button>
+        }}>🧪 Chemical elements</button>
       </div>
     </div>
   )
