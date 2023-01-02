@@ -93,6 +93,7 @@ function App() {
       }, 2500)
     } catch (err) {
       console.log(err)
+      alert('Something went wrong :( you can report bugs at this url: https://github.com/boogerbuttcheeks/text2array')
     }
   }
 
@@ -271,7 +272,7 @@ function App() {
           quickFill('Africa Antarctica Asia Australia Europe North America South America')
           setPerCharacter(false)
           setLineBreak(false)
-        }}>🌎 Continents</button>
+        }}>🌎 Continents</button>π
       </div>
       <h3>Misc.</h3>
       <div className="quick-fill-wrapper">
